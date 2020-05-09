@@ -1,6 +1,5 @@
 import React from 'react';
 
-  //     <label htmlFor="bar"> bar </label>
 // function App() {
 //   // const greeting = "Hi!!";
 //   // const dom = <h1 className="foo">{greeting}</h1>
