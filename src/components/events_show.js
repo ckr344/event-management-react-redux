@@ -133,7 +133,7 @@ const mapDispatchToProps = ({ deleteEvent, getEvent, putEvent })
 
 // Fromをしようしたときに必要。バリデーションの設定、フォームの名前を定義する。
 export default connect(mapStateToProps , mapDispatchToProps)(
-  // enableReinitialize: trueは元々持っているTitleとBodyの情報を表示させるための記述
+  // enableReinitialize: trueは元々持っているTitleとBodyの情報を表示させるための記述。これがなくても反映はされるが、別の人が開いたときに情報が画面上で更新されなくなる。
   reduxForm({ validate, form: 'eventShowForm', enableReinitialize: true })(EventsShow)
 )
 
